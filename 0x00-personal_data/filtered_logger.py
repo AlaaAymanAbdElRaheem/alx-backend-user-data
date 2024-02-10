@@ -2,10 +2,11 @@
 """function called filter_datum that returns the log message obfuscated"""
 
 import re
+from typing import List
 
 
 def filter_datum(
-                fields: list,
+                fields: List,
                 redaction: str,
                 message: str,
                 separator: str) -> str:
