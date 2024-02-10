@@ -59,6 +59,8 @@ def main() -> None:
             f"ssn={user[3]}; password={user[4]}; ip={user[5]}; " + \
             f"last_login={user[6]}; user_agent={user[7]};"
         logger.info(message)
+    cursor.close()
+    db.close()
 
 
 class RedactingFormatter(logging.Formatter):
