@@ -36,3 +36,8 @@ class Auth:
     def current_user(self, request=None):
         """current_user method"""
         return None
+
+
+class BasicAuth(Auth):
+    """basic auth class"""
+    pass
